@@ -1,0 +1,117 @@
+.main {
+    display: flex;
+    background-color: cornflowerblue;
+    padding: 75px;
+    justify-content: center;
+    margin: 30px;
+}
+
+.taskList {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    margin-right: 15px;
+    background-color: #eaeaea;
+}
+
+.taskList p {
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+.taskList:nth-child(2) .taskItems {
+    color: #000000;
+}
+
+.taskList:last-child {
+    margin-right: 0;
+}
+
+.addButton {
+    color: gray;
+    text-align: center;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.item {
+    border: 1px solid;
+    border-radius: 5px;
+    width: 95%;
+    padding: 5px;
+    margin-bottom: 5px;
+    cursor: grabbing;
+    position: relative;
+    background-color: white;
+}
+
+.item:hover>.deleteButton {
+    display: block;
+}
+
+.item:last-child {
+    margin-bottom: 0;
+}
+
+.deleteButton {
+    width: 20px;
+    height: 20px;
+    top: 5px;
+    right: 5px;
+    position: absolute;
+    cursor: pointer;
+    text-align: center;
+}
+
+.taskItems {
+    min-height: 15px;
+}
+
+.addButton,
+.taskInput {
+    margin-top: 10px;
+    padding: 5px 0;
+}
+
+.addTButton {
+    background-color: forestgreen;
+    margin: 8px;
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: white;
+}
+
+.taskInput {
+    display: flex;
+    flex-direction: column;
+}
+
+.text {
+    margin-bottom: 20px;
+    height: 30px;
+}
+
+.hidden {
+    display: none;
+}
+
+.moving {
+    border-radius: 10px;
+    position: absolute;
+    z-index: 999;
+    pointer-events: none;
+    background: #fff;
+    cursor: grabbing;
+}
+
+.ghost {
+    color: lightgray;
+    background-color: lightgray;
+    width: 180px;
+    height: 18px;
+}
